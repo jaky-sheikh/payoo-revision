@@ -5,10 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <h1>This is our login home page</h1>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-display text-black grid place-content-center">
+                <!-- Available balance -->
+                <div>
+                    <div class="stats shadow bg-white flex justify-center">
+                        <div class="stat text-center">
+                            <div class="stat-value">9400</div>
+                            <div class="stat-desc text-black">Available Balance</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider divider-secondary"></div>
+                <div>
+                    <button class="btn btn-secondary">Add Money</button>
+                    <button class="btn btn-secondary">Cash Out</button>
+                </div>
+                <div class="divider divider-secondary"></div>
+                <!-- Add money form -->
+
+                <div>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="label">Amount</label>
+                                <input type="text" class="input" placeholder="Amount" />
+                                <label class="label">Pin</label>
+                                <input type="password" class="input" placeholder="Enter your pin" />
+                                <button class="btn btn-neutral mt-4">Add money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="JS/home.js"></script>
 </body>
 
 </html>
